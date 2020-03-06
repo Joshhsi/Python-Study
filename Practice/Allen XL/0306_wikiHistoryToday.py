@@ -27,7 +27,7 @@ soup = BeautifulSoup( aWebPageData ,'html.parser')
 #print(soup)
 
 
-#從soap裏面再抓資訊下來 抓歷史上的今天是那天的資料 （完全不懂怎麼辦到的）
+#從soap裏面再抓資訊下來 抓歷史上的今天是那天的資料 
 name_box = soup.find('h1', attrs={'class' :  'firstHeading' })
 name = name_box.text.strip()
 #print(name)
