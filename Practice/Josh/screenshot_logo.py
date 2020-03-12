@@ -72,8 +72,8 @@ while True:
                     
                 time.sleep(2)
                 web.save_screenshot("WindowsHCL_"+ Your_Model + '_' + select  + ".png")
-        break      
-                   
+        break                   
+        
         web.close()
 
 
