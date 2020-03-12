@@ -5,21 +5,22 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 
 
-Query_Model_List = list()
+
 #針對輸入想查詢的型號關鍵字去各hcl網頁搜尋logo資訊並擷圖
-Query_Model_List.append(input("請輸入查詢關鍵字"))
 while True:
-    Your_Model = input()
-    if Your_Model == "":
-        break
+    Your_Model = str(input("請輸入查詢關鍵字 : "))
+    if Your_Model == "" : break
     else:
-        Query_Model_List.append(Your_Model)
         # 進入Windows HCL
-        web = webdriver.Chrome("D:\code\python\chromedriver.exe") 
+
+        options = webdriver.ChromeOptions()
+        options.add_argument('--ignore-certificate-errors')
+        web = webdriver.Chrome(r"D:\code\python\chromedriver.exe", options=options) 
         urlwindows='https://www.windowsservercatalog.com/default.aspx'
         web.maximize_window()
         
         #利用填入欲查詢的型號，開始進入搜尋
+
         web.get(urlwindows)
         web.find_element_by_name('text').clear()
         web.find_element_by_name('text').send_keys(Your_Model)
@@ -70,7 +71,8 @@ while True:
                 ();""")
                     
                 time.sleep(2)
-                web.save_screenshot("WindowsHCL_"+ Your_Model + '_' + select  + ".png")      
+                web.save_screenshot("WindowsHCL_"+ Your_Model + '_' + select  + ".png")
+        break      
                    
         web.close()
 
