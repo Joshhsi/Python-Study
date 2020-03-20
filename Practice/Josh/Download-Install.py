@@ -3,8 +3,8 @@
 
 from urllib.request import urlopen
 import subprocess as sp
-DOWNLOAD_URL = "https://cdn1.evernote.com/win6/public/Evernote_6.23.2.8859.exe"
-DOWNLOAD_DST = "C:\Temp\evernote.exe"
+DOWNLOAD_URL = "https://www.python.org/ftp/python/3.8.2/python-3.8.2.exe"
+DOWNLOAD_DST = "C:\Temp\python.exe"
 
 def download(url, dst_file):
     content = urlopen(url).read()
@@ -13,7 +13,7 @@ def download(url, dst_file):
     outfile.close()
 
 def install():
-    process = sp.Popen("C:\Temp\evernote.exe /quiet", shell=True)
+    process = sp.Popen("C:\Temp\python .exe /quiet", shell=True)
     process.wait()
 def main():
     download(DOWNLOAD_URL, DOWNLOAD_DST)
