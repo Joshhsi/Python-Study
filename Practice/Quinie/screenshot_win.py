@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import Select
 
 a = list()
 #針對輸入想查詢的型號關鍵字去各hcl網頁搜尋logo資訊並擷圖123
-a.append(input("請輸入查詢關鍵字"))
+a.append(input("請輸入查詢關鍵字："))
 while True:
     b = input()
     if b == "":

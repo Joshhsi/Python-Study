@@ -17,6 +17,6 @@ def main():
     download(DOWNLOAD_URL, DOWNLOAD_DST)
     install(DOWNLOAD_DST)
 if __name__ == "__main__":
-    print("Python Installer下載位置：C:\Temp")
+    print("Python Installer下載位置 C:\Temp")
     main()
     print("執行完畢")
