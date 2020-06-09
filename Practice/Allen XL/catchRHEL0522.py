@@ -111,8 +111,8 @@ for tbodyTr in tbody.find_all('tr') :
 
     for tbodyTrTh in tbodyTr.find_all('th') :
 #  --------------------------------------------- 
-#   trX th td td td ... td                     -  <-----用for回圈 依序從trX裡面依序拿出th 跟 td
-#    ^  ^  ^  ^  ^   ^   ^
+#   trNum th td td td ... td                     -  <-----用for回圈 依序從tr1,tr2,...trX裡面依序拿出th 跟 td
+#    ^    ^  ^  ^  ^   ^   ^
 #  --------------------------------------------- 
 
 
