@@ -4,7 +4,7 @@
 # 先檢查目前有安裝的module
 # pip list
 #
-# 以下是需要的module，請照以下指令安裝
+# 以下是需要的module，有缺少的module請照以下指令安裝
 # python -m pip install selenium  
 # python -m pip install urllib3
 # python -m pip install BeautifulSoup4
