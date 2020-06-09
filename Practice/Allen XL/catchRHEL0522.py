@@ -12,14 +12,8 @@
 # python -m pip install xlwt
 # python -m pip install requests
 #
-
-
-
-
-
 import urllib
 import time
-
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
