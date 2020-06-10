@@ -99,24 +99,23 @@ tbody = tableData.find('tbody')
 
 for tbodyTr in tbody.find_all('tr') :
 # --------------------------<tbody>------------   
-#  tr1  th td ... td                          -  <-----用for回圈 依序拿出tr，第一個for回圈拿這個
-#  tr2  th td ... td                          -  <-----第二個for回圈拿這個
-#   .   .  .  ...  .                          -  <-----第三個for回圈拿這個
+#  tr1  th td ... td                          -  <-----用for迴圈 依序拿出tr，第一個for迴圈拿這個
+#  tr2  th td ... td                          -  <-----第二個for迴圈拿這個
+#   .   .  .  ...  .                          -  <-----第三個for迴圈拿這個
 #   .   .  .  ...  .                          -  <-----
 #   .   .  .  ...  .                          -  <-----
-#  trX  th td ... td                          -  <-----第X個for回圈拿這個
+#  trX  th td ... td                          -  <-----第X個for迴圈拿這個
 #  -------------------------------------------- 
 
 
 
-    for tbodyTrTh in tbodyTr.find_all('th') :
 #  --------------------------------------------- 
-#   trNum th td td td ... td                     -  <-----用for回圈 依序從tr1,tr2,...trX裡面依序拿出th 跟 td
+#   trNum th td td td ... td                     -  <-----下面使2個用for迴圈 分別從tr1,tr2,...trX裡面依序拿出th 跟 td 的資料
 #    ^    ^  ^  ^  ^   ^   ^
 #  --------------------------------------------- 
 
 
-
+    for tbodyTrTh in tbodyTr.find_all('th') :
         tt =  tbodyTrTh.text.replace('\n', '').replace('\xa0', '')
         tt = tt.strip()
         th=  [ tt ] 
