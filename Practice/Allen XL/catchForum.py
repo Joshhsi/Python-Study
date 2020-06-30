@@ -55,8 +55,12 @@ def login(loginhash,formhash,username,password):
     session.headers.update(headers)  
     r=session.post(url,data)  
     print(r.text)
-    #輸出結果可以看到登入畫面的html檔資訊
-
+    #輸出結果可以看到登入畫面成功的html檔資訊
+    #以下嘗試用request的get功能抓取網頁資料，但是失敗了   
+    response = session.get('http://10.34.40.113/pcedforum/forum.php',headers = headers)
+    print(response.status_code)
+    print(response.text)
+    print ("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
 
 
 
