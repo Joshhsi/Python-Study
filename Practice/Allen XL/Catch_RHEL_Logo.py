@@ -1,5 +1,5 @@
 # 檢查Python的版本
-# python -v
+# python --version
 #
 # 先檢查目前有安裝的module
 # pip list
