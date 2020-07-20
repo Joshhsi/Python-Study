@@ -25,7 +25,7 @@ time.sleep(4)
 # selenium
 # 清空欄位&填入mail英文名稱
 web.find_element_by_name('userid').clear()
-web.find_element_by_name('userid').send_keys('10708037')
+web.find_element_by_name('userid').send_keys('你的工號')
 
 
 # selenium
