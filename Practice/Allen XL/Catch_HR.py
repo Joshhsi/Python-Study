@@ -29,7 +29,7 @@ web.find_element_by_name('userid').send_keys('你的工號')
 
 
 # selenium
-# 
+# getpass
 # 清空欄位&填入工號
 web.find_element_by_name('pwd').clear()
 #web.find_element_by_name('pwd').send_keys('xxx')
