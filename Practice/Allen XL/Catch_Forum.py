@@ -12,7 +12,7 @@ import ssl
 
 
 username = 'Allen_XL_Li'
-password = '10708037'
+password = '10877013'
 session = requests.session()
 
 print("*********************************************************************")
@@ -38,7 +38,7 @@ def get_login_window():
 
 #模擬登入
 def login(loginhash,formhash,username,password):  
-    url='http://10.34.40.113/pcedforum/member.php?mod=logging&action=login&loginsubmit=yes&loginhash='+loginhash
+    url='http://10.34.40.111/pcedforum/member.php?mod=logging&action=login&loginsubmit=yes&loginhash='+loginhash
     data={'formhash':formhash,  
         #'referer':'http://www.discuz.net/forum.php',  
         #'loginfield':'username',  
